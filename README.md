@@ -1,4 +1,4 @@
-# Progressive Hybrid Pseudo-Labeling for Unsupervised Domain Adaptation with Ascending Low-Rank Adaptation
+# LLM-Powered Domain-Robust Anchors via Logits Distillation for Unsupervised Domain Adaptation
 
 
 
@@ -18,15 +18,15 @@ robustness under domain shifts.
 LoRA (GAL), which guides the low-rank adaptation optimization toward flatter minima in the loss landscape. This design significantly improves the cross-domain generalization ability of parameter-efficient adaptation, striking a favorable balance between parameter efficiency and representational transferability under large domain gaps. 
 (3) We develop a stable student adaptation strategy in an end-to-end teacher-student distillation paradigm, which effectively mitigates the negative impact of noisy pseudo-labels and stabilizes the self-training process, while preserving the intrinsic visual discriminability of the pre-trained VLM. We conduct extensive cross-domain experiments on four widely-used UDA benchmarks, including Office-Home, Office-31,
 VisDA-2017, and DomainNet. Experimental results verify that DRA consistently achieves state-of-the-art performance across diverse cross-domain scenarios compared with existing CNN-, Transformer-, and VLMs-based solutions. Notably, DRA demonstrates strong robustness on highly challenging large-domain-gap settings while requiring ultra-low learnable parameters and inference overhead, validating the effectiveness and scalability
-of the proposed lightweight adaptation paradigm. The code is available at XXX.
+of the proposed lightweight adaptation paradigm. The code is available at https://github.com/el2k/DRA.
 
 ## Main Contributions
 
-- **New perspective£º** To the best of our knowledge, we are the first to come up with LLM-powered prompts toconstruct domain-robust class anchors for UDA. Each anchor can comprehensively describe the class information it corresponds to, without introducing particular bias toward any specific domain, thereby yielding robust cross-domain visual representations.
-- **Novel Paradigm£º** Deviating from the latest two-stage or teacher-trainable approaches, we introduce an end-to-end
+- **New perspectiveÂ£Âº** To the best of our knowledge, we are the first to come up with LLM-powered prompts toconstruct domain-robust class anchors for UDA. Each anchor can comprehensively describe the class information it corresponds to, without introducing particular bias toward any specific domain, thereby yielding robust cross-domain visual representations.
+- **Novel ParadigmÂ£Âº** Deviating from the latest two-stage or teacher-trainable approaches, we introduce an end-to-end
 teacher-student distillation paradigm (DRA) that transfers knowledge from an entirely frozen teacher to a student
 model updated solely via geometry-aware LoRA finetuning, i.e., a lightweight adaptation strategy designed to explicitly navigate optimization toward flatter solution landscapes, yielding improved stability and domain transferability.
-- **High Performance£º** We conduct extensive experiments on four widely-used UDA benchmarks, including Office-Home, Office-31, VisDA-2017 and Do-
+- **High PerformanceÂ£Âº** We conduct extensive experiments on four widely-used UDA benchmarks, including Office-Home, Office-31, VisDA-2017 and Do-
 mainNet. Experimental results demonstrate that our proposed DRA consistently outperforms existing state-of-the-art (SOTA) UDA methods under large domain shifts.Moreover, DRA achieves superior robustness with significantly lower computational complexity, validating the effectiveness and scalability of the proposed lightweight cross-domain paradigm.
 
 ------
@@ -95,7 +95,6 @@ Please follow the instructions as follows to prepare all datasets. Datasets list
 - [Office-31](https://faculty.cc.gatech.edu/~judy/domainadapt/#datasets_code)
 - [VisDA-2017](http://ai.bu.edu/visda-2017/#download)
 - [DomainNet](http://ai.bu.edu/M3SDA/)
-- [miniDomainNet](https://arxiv.org/abs/2003.07325)
 ------
 
 ## Training and Evaluation
@@ -124,7 +123,7 @@ bash scripts/DRA/eval_DRA.sh officehome b32_ep10_officehome DRA ViT-B/16 a-c 0
 
 
 
-The details are at each method folder in [scripts folder]([DRA/scripts at main ¡¤ el2k/DRA (github.com)](https://github.com/el2k/DRA/tree/main/scripts)).
+The details are at each method folder in [scripts folder]([DRA/scripts at main Â¡Â¤ el2k/DRA (github.com)](https://github.com/el2k/DRA/tree/main/scripts)).
 
 
 
@@ -132,7 +131,7 @@ The details are at each method folder in [scripts folder]([DRA/scripts at main ¡
 
 
 
-Our style of reademe refers to [PDA](https://github.com/BaiShuanghao/Prompt-based-Distribution-Alignment). And our code is based on [CoOp and CoCoOp](https://github.com/KaiyangZhou/CoOp), [DAPL](https://github.com/LeapLabTHU/DAPrompt/tree/main) , [MaPLe](https://github.com/muzairkhattak/multimodal-prompt-learning)  , [PDA](https://github.com/BaiShuanghao/Prompt-based-Distribution-Alignment) , [PMCC](https://github.com/246dxw/PMCC) and [CDU](https://github.com/1d1x1w/CDU) etc. repository. We thank the authors for releasing their code. If you use their model and code, please consider citing these works as well. Supported methods are as follows:
+Our style of reademe refers to [PDA](https://github.com/BaiShuanghao/Prompt-based-Distribution-Alignment). And our code is based on [CoOp and CoCoOp](https://github.com/KaiyangZhou/CoOp), [DAPL](https://github.com/LeapLabTHU/DAPrompt/tree/main) , [MaPLe](https://github.com/muzairkhattak/multimodal-prompt-learning)  , [PDA](https://github.com/BaiShuanghao/Prompt-based-Distribution-Alignment) , [EKDA]([https://github.com/1d1x1w/CDU], [PMCC](https://github.com/246dxw/PMCC) and  etc. repository. We thank the authors for releasing their code. If you use their model and code, please consider citing these works as well. Supported methods are as follows:
 
 | Method       | Paper                                          | Code                                                         |
 | ------------ | ---------------------------------------------- | ------------------------------------------------------------ |
@@ -142,5 +141,5 @@ Our style of reademe refers to [PDA](https://github.com/BaiShuanghao/Prompt-base
 | IVLP & MaPLe | [CVPR 2023](https://arxiv.org/abs/2210.03117)  | [link](https://github.com/muzairkhattak/multimodal-prompt-learning) |
 | DAPL         | [TNNLS 2023](https://arxiv.org/abs/2202.06687) | [link](https://github.com/LeapLabTHU/DAPrompt)               |
 | PDA          | [AAAI 2024](https://arxiv.org/abs/2312.09553)  | [link](https://github.com/BaiShuanghao/Prompt-based-Distribution-Alignment) |
+| EKDA          | [AAAI 2025](https://ojs.aaai.org/index.php/AAAI/article/view/39871)  | [link](https://anonymous.4open.science/r/EKDA) |
 | PMCC         | [PR 2026](https://www.sciencedirect.com/science/article/abs/pii/S0031320325007551?via%3Dihub)  | [link](https://github.com/246dxw/PMCC)                       |
-| CDU          | [PR 2026](https://www.sciencedirect.com/science/article/pii/S0031320325016486?ref=pdf_download&fr=RR-2&rr=9baa13f40b6d2a92)  | [link](https://github.com/1d1x1w/CDU) |
