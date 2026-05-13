@@ -22,11 +22,11 @@ of the proposed lightweight adaptation paradigm. The code is available at https:
 
 ## Main Contributions
 
-- **New perspective£º** To the best of our knowledge, we are the first to come up with LLM-powered prompts toconstruct domain-robust class anchors for UDA. Each anchor can comprehensively describe the class information it corresponds to, without introducing particular bias toward any specific domain, thereby yielding robust cross-domain visual representations.
-- **Novel Paradigm£º** Deviating from the latest two-stage or teacher-trainable approaches, we introduce an end-to-end
+- **New perspective:** To the best of our knowledge, we are the first to come up with LLM-powered prompts toconstruct domain-robust class anchors for UDA. Each anchor can comprehensively describe the class information it corresponds to, without introducing particular bias toward any specific domain, thereby yielding robust cross-domain visual representations.
+- **Novel Paradigm:** Deviating from the latest two-stage or teacher-trainable approaches, we introduce an end-to-end
 teacher-student distillation paradigm (DRA) that transfers knowledge from an entirely frozen teacher to a student
 model updated solely via geometry-aware LoRA finetuning, i.e., a lightweight adaptation strategy designed to explicitly navigate optimization toward flatter solution landscapes, yielding improved stability and domain transferability.
-- **High Performance£º** We conduct extensive experiments on four widely-used UDA benchmarks, including Office-Home, Office-31, VisDA-2017 and Do-
+- **High Performance:** We conduct extensive experiments on four widely-used UDA benchmarks, including Office-Home, Office-31, VisDA-2017 and Do-
 mainNet. Experimental results demonstrate that our proposed DRA consistently outperforms existing state-of-the-art (SOTA) UDA methods under large domain shifts.Moreover, DRA achieves superior robustness with significantly lower computational complexity, validating the effectiveness and scalability of the proposed lightweight cross-domain paradigm.
 
 ------
