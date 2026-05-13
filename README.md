@@ -131,7 +131,7 @@ The details are at each method folder in [scripts folder]([DRA/scripts at main Â
 
 
 
-Our style of reademe refers to [PDA](https://github.com/BaiShuanghao/Prompt-based-Distribution-Alignment). And our code is based on [CoOp and CoCoOp](https://github.com/KaiyangZhou/CoOp), [DAPL](https://github.com/LeapLabTHU/DAPrompt/tree/main) , [MaPLe](https://github.com/muzairkhattak/multimodal-prompt-learning)  , [PDA](https://github.com/BaiShuanghao/Prompt-based-Distribution-Alignment) , [EKDA]([https://github.com/1d1x1w/CDU], [PMCC](https://github.com/246dxw/PMCC) and  etc. repository. We thank the authors for releasing their code. If you use their model and code, please consider citing these works as well. Supported methods are as follows:
+Our style of reademe refers to [PDA](https://github.com/BaiShuanghao/Prompt-based-Distribution-Alignment). And our code is based on [CoOp and CoCoOp](https://github.com/KaiyangZhou/CoOp), [DAPL](https://github.com/LeapLabTHU/DAPrompt/tree/main) , [MaPLe](https://github.com/muzairkhattak/multimodal-prompt-learning)  , [PDA](https://github.com/BaiShuanghao/Prompt-based-Distribution-Alignment) , [EKDA](https://github.com/1d1x1w/CDU), [PMCC](https://github.com/246dxw/PMCC) and  etc. repository. We thank the authors for releasing their code. If you use their model and code, please consider citing these works as well. Supported methods are as follows:
 
 | Method       | Paper                                          | Code                                                         |
 | ------------ | ---------------------------------------------- | ------------------------------------------------------------ |
