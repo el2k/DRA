@@ -141,5 +141,5 @@ Our style of reademe refers to [PDA](https://github.com/BaiShuanghao/Prompt-base
 | IVLP & MaPLe | [CVPR 2023](https://arxiv.org/abs/2210.03117)  | [link](https://github.com/muzairkhattak/multimodal-prompt-learning) |
 | DAPL         | [TNNLS 2023](https://arxiv.org/abs/2202.06687) | [link](https://github.com/LeapLabTHU/DAPrompt)               |
 | PDA          | [AAAI 2024](https://arxiv.org/abs/2312.09553)  | [link](https://github.com/BaiShuanghao/Prompt-based-Distribution-Alignment) |
-| EKDA          | [AAAI 2025](https://ojs.aaai.org/index.php/AAAI/article/view/39871)  | [link](https://anonymous.4open.science/r/EKDA) |
+| EKDA          | [AAAI 2026](https://ojs.aaai.org/index.php/AAAI/article/view/39871)  | [link](https://anonymous.4open.science/r/EKDA) |
 | PMCC         | [PR 2026](https://www.sciencedirect.com/science/article/abs/pii/S0031320325007551?via%3Dihub)  | [link](https://github.com/246dxw/PMCC)                       |
